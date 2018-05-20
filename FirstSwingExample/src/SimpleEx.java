@@ -17,6 +17,7 @@ public class SimpleEx extends JFrame {
     }
 
     public static void main(String[] args) {
+        // provides concurency safety for UI updates
         EventQueue.invokeLater(() -> {
             SimpleEx ex = new SimpleEx();
             ex.setVisible(true);
