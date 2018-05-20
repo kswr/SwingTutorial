@@ -9,6 +9,15 @@ public class FrameIconEx extends JFrame {
 
     private void InitUI() {
 
+        ImageIcon webIcon = new ImageIcon("src/main/resources/web.png");
+
+        setIconImage(webIcon.getImage());
+
+        setTitle("Icon");
+        setSize(300, 200);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
     }
 
     public static void main(String[] args) {
